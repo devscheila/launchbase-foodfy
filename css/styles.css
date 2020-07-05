@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #111111;
+}
+
+header {
+  width: 940px;
+  margin: 30px auto;
+  display: flex;
+}
+  header img {
+    margin-right: 100px;
+  }
+  header nav a {
+    font-size: 16px;
+    color: #111111;
+    text-decoration: none;
+    margin-right: 42px;
+  }
+  header nav a:hover {
+    font-weight: bold;
+  }
+
+section {
+  width: 940px;
+  margin: 20px auto 40px;
+  background: #FBDFDB;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px 0 50px;
+}
+  section div {
+    margin-top: 60px;
+    width: 320px;
+  }
+    section div h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    section div p {
+      font-size: 18px;
+      line-height: 28px;
+      opacity: 0.7;
+    }
+
+main {
+  width: 940px;
+  margin: 40px auto;
+}
+  main h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+.receitas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.receita {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+  .receita img {
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+  }
+  .receita h3 {
+    font-size: 18px;
+  }
+  .receita p {
+    font-size: 14px;
+    color: #777777;
+  }
+
+.sobre h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sobre h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.sobre p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;   
+  }
+
+.modal {
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 640px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+  .modal img {
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .modal h3 {
+    font-size: 24px;
+  }
+
+  .modal p {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 30px;;
+  }
+
+  .modal #close {
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+  }
+
+
+footer {
+  width: 100%;
+  background: #EEEEEE;
+  padding: 10px;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+}
