@@ -61,94 +61,98 @@ main {
     font-size: 24px;
   }
 
-.receitas {
+.recipes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.receita {
+.recipe {
   margin-bottom: 20px;
   cursor: pointer;
 }
-  .receita img {
+  .recipe img {
     width: 300px;
     border-radius: 15px;
     margin-bottom: 16px;
   }
-  .receita h3 {
+  .recipe h3 {
     font-size: 18px;
   }
-  .receita p {
+  .recipe p {
     font-size: 14px;
     color: #777777;
   }
 
-.sobre h1 {
+.about h1 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.sobre h2 {
+.about h2 {
   font-size: 20px;
   font-weight: bold;
   margin: 20px 0;
 }
-.sobre p {
+.about p {
   font-size: 18px;
   color: #444444;
   line-height: 28px;
   margin-bottom: 20px;
 }
 
-.modal-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.details img {
+  border-radius: 15px;
 }
-  .modal-overlay.active {
-    opacity: 1;
-    visibility: visible;   
-  }
 
-.modal {
-  background: #FFFFFF;
-  border-radius: 16px;
-  width: 640px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.details > h2 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #111111;
   text-align: center;
+  margin: 30px 0 5px 0;
 }
 
-  .modal img {
-    border-radius: 15px;
-    margin-bottom: 10px;
-  }
+.details > p {
+  text-align: center;
+  font-size: 20px;
+  color: #777777;
+}
 
-  .modal h3 {
-    font-size: 24px;
-  }
+.details > h3 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #111111;
+  margin: 50px 0 30px 0;
+}
 
-  .modal p {
-    font-size: 18px;
-    color: #777777;
-    margin-bottom: 30px;;
-  }
+.details > h3 > span {
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
-  .modal #close {
-    font-size: 16px;
-    color: #999999;
-    cursor: pointer;
-  }
+.details #ingredients,
+.details #preparation,
+.details #information {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  text-align: left;
+}
 
+.details #ingredients {
+  margin-left: 20px;
+}
+
+.details #preparation p {
+  margin-bottom: 18px;
+}
+
+.hide {
+  display: none;
+}
 
 footer {
   width: 100%;

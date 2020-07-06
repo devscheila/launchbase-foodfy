@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+	<title>Foodfy</title>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<div>
+			<h1>As melhores recipes</h1>
+			<p>Aprenda a construir os melhores pratos com recipes criadas por profissionais do mundo inteiro.</p>
+		</div>
+		<img src="/assets/chef.png" alt="Chef Foodfy">
+	</section>
+
+	<main>
+		<h2>Mais acessadas</h2>
+		<div class="recipes">
+
+			{% for recipe in recipes %}
+			<div class="recipe">
+				<img class="recipeImg" src="{{recipe.image}}" alt="{{recipe.title}}" />
+				<h3 class="recipeName">{{recipe.title}}</h3>
+				<p class="recipeAuthor">por {{recipe.author}}</p>
+			</div>
+			{% endfor %}
+
+		</div>
+	</main>
+
+	<script src="/scripts/scripts.js"></script>
+	
+	{% endblock %}
